@@ -216,7 +216,6 @@ for_window [instance="dropdown"] floating enable, resize set 1400 850,move posit
 
 
 # flameshot
-exec --no-startup-id flameshot
 bindsym Print exec "flameshot gui"
 
-exec --no-startup-id ~/bin/arandr_work.sh
+exec --no-startup-id ~/.i3/startup.sh
