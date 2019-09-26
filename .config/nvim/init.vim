@@ -22,8 +22,9 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'do': 'bash install.sh',
     \ }
 
-" (Optional) Multi-entry selection UI.
-Plug 'junegunn/fzf'
+" Search
+" Plug 'junegunn/fzf'
+Plug 'jremmen/vim-ripgrep'
 
 " Use release branch
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
