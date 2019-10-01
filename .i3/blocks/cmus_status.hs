@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver lts-13.29 script --package protolude,text,process,containers
+-- stack --resolver lts-14.7 script --package protolude,text,process,containers
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE MultiWayIf #-}

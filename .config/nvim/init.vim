@@ -161,7 +161,7 @@ au User lsp_setup call lsp#register_server({
 
 " Ctrl-P settings
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed' " files, buffers and MRU
+let g:ctrlp_cmd = 'CtrlP' " files, buffers and MRU
 let g:ctrlp_working_path_mode = 'ra'  " root is .git or current file if not .git
 
 " ------------------------------------------------------------------------------------------

@@ -133,12 +133,13 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 #----------------------------------------------------------------------------------------------------------------------
 
-export PATH=${PATH}:/opt/ghc/bin
 export PATH=${PATH}:/home/andre/bin
 export PATH="${PATH}:/home/andre/.local/bin"
 export GOPATH=/home/andre/prog/go
 export EDITOR=nvim
 export VISUAL=nvim
+
+source /home/andre/.ghcup/env
 
 set -o vi
 autoload -z edit-command-line
@@ -196,3 +197,4 @@ alias lt='ls --tree'
 
 
 dropbox start
+

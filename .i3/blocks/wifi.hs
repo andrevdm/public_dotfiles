@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver lts-13.29 script --package turtle --package protolude,text,process,transformers,mtl
+-- stack --resolver lts-14.7 script --package turtle --package protolude,text,process,transformers,mtl
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
