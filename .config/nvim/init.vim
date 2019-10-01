@@ -76,6 +76,9 @@ set number
 set relativenumber
 set splitright
 set nowrap
+" search options
+set ignorecase
+set smartcase
 
 " persistent
 set undodir=~/.cache/vimundo/
@@ -199,3 +202,4 @@ nmap <F8> :NERDTreeToggle<CR>
 nnoremap <CR> :noh<CR><CR>
 
 colorscheme PaperColor
+
