@@ -1,0 +1,6 @@
+blocks/battery
+blocks/wifi
+blocks/cmus_status
+blocks/*.hi
+blocks/*.o
+

@@ -135,6 +135,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 export PATH=${PATH}:/home/andre/bin
 export PATH="${PATH}:/home/andre/.local/bin"
+export PATH="${PATH}:/home/andre/.cabal/bin"
 export GOPATH=/home/andre/prog/go
 export EDITOR=nvim
 export VISUAL=nvim
@@ -148,6 +149,13 @@ bindkey "^X^E" edit-command-line
 
 source ~/bin/awssh.sh
 #weather.sh &
+
+
+# nix
+source $HOME/.nix-profile/etc/profile.d/nix.sh
+export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixos-19.09"
+export GIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 
 
 xset r rate 200 160
@@ -186,7 +194,8 @@ xinput set-prop 'System Administrator’s Trackpad' 'Device Accel Velocity Scali
 
 alias gs='emacsclient -t -c --eval "(magit-status)" "(delete-other-windows)"'
 alias awssy='awssy --region Ireland --key ~/.ssh/hyraxbio.pem --cache'
-alias vim=nvim
+alias vim=nvim-nightly
+alias nvim=nvim-nightly
 alias ls=lsd
 alias cat=bat
 
@@ -196,5 +205,5 @@ alias la='ls -a'
 alias lt='ls --tree'
 
 
-dropbox start
+# dropbox start
 

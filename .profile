@@ -50,6 +50,9 @@ export VISUAL=vim
 export NDK_HOME=/media/andre/data/android-sdk/ndk-bundle
 export ANDROID_HOME=/opt/android-sdk/
 
+export GIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
 # alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 
@@ -57,3 +60,4 @@ unset GREP_OPTIONS
 xset r rate 200 60 #25
 
 alias open=xdg-open
+if [ -e /home/andre/.nix-profile/etc/profile.d/nix.sh ]; then . /home/andre/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
