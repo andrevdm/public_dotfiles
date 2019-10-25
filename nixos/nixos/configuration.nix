@@ -88,14 +88,18 @@
     gnupg
     haskellPackages.cabal-install
     htop
+    jdk
+    jdk12
     kdiff3
     keybase
     killall
     libreoffice
+    libqalculate
     lm_sensors
     lsd
     man_db
     mitmproxy
+    minecraft
     neovim
     nodejs
     oh-my-zsh
@@ -105,10 +109,12 @@
     pgcli
     postgresql
     pulseaudio
+    pulsemixer
     python
     python3
     ranger
     ripgrep
+    scite
     slack
     spideroak
     stack
