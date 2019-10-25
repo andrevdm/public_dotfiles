@@ -70,6 +70,7 @@
     cacert
     cachix
     chromium
+    cron
     curl 
     docker
     dropbox
@@ -123,6 +124,7 @@
     python3
     ranger
     ripgrep
+    ruby_2_5
     scite
     slack
     spideroak
