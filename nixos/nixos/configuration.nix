@@ -125,7 +125,6 @@
     python3
     ranger
     ripgrep
-    ruby_2_5
     scite
     slack
     spideroak
