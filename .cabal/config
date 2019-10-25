@@ -99,7 +99,6 @@ extra-prog-path: /home/andre/.cabal/bin
 -- index-state:
 -- root-cmd:
 symlink-bindir: /home/andre/.cabal/bin
-
 build-summary: /home/andre/.cabal/logs/build.log
 -- build-log:
 remote-build-reporting: anonymous

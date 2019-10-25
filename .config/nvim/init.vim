@@ -13,7 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'nanotech/jellybeans.vim'
 Plug 'jceb/vim-orgmode'
 " Plug 'nathanaelkane/vim-indent-guides'
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 " Plug 'universal-ctags/ctags'
 Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
 
