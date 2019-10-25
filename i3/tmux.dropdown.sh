@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 tmux has-session -t dropdown
 if [ $? != 0 ]
 then
@@ -13,9 +13,6 @@ then
 
     tmux new-window -n "org" -t dropdown
     tmux send-keys -t dropdown:2.0 'cd ~/Dropbox/org; nvim ~/Dropbox/org/hyrax.org' C-m
-
-    tmux new-window -n "cmus" -t dropdown
-    tmux send-keys -t dropdown:3.0 'cmus' C-m
 
     tmux select-window -t dropdown:1
     tmux select-pane -t dropdown:1.1
