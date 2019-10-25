@@ -63,6 +63,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     acpid
+    alpine
     bash
     bat
     binutils
