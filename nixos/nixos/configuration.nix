@@ -80,10 +80,19 @@
     gcc
     gimp
     gitFull
+    gnome3.gedit
+    gnome3.ghex
+    gnome3.gnome-characters
+    gnome3.gnome-control-center
+    gnome3.gnome-dictionary
     gnome3.gnome-disk-utility
+    gnome3.gnome-disk-utility
+    gnome3.gnome-font-viewer
     gnome3.gnome-keyring
     gnome3.gnome-screensaver
+    gnome3.libgnome-keyring
     gnome3.nautilus
+    gnome3.seahorse
     gnumake
     gnupg
     haskellPackages.cabal-install
