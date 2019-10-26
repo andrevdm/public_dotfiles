@@ -133,6 +133,7 @@
     termite
     tmux
     tree
+    youtube-dl
     vim
     vlc
     watchman
@@ -194,6 +195,7 @@
   services.printing.enable = true;
 
   services.acpid.enable = true;
+  services.cron.enable = true;
 
   # Enable sound.
   sound.enable = true;
