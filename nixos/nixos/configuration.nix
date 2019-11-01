@@ -13,6 +13,7 @@
       ./services/docker.nix
       ./services/psql.nix
       ./services/ssh.nix
+      ../nixos_secret/wifi.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -23,7 +24,7 @@
   nixpkgs.config.allowUnfree = true;
 
   networking.hostName = "andrevdm"; # Define your hostname.
-  networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -74,7 +75,6 @@
     cron
     curl 
     docker
-    dropbox
     elixir
     feh
     firefox
@@ -99,8 +99,10 @@
     gnupg
     haskellPackages.cabal-install
     htop
+    httpie
     jdk
     jdk12
+    jq
     kdiff3
     keybase
     killall
@@ -118,6 +120,7 @@
     pcmanfm
     perl
     pgcli
+    pinta
     postgresql
     pulseaudio
     pulsemixer
@@ -189,7 +192,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-  networking.networkmanager.enable = true;
+  networking.networkmanager.enable = false;
  
   # Enable CUPS to print documents.
   services.printing.enable = true;
