@@ -134,8 +134,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 #----------------------------------------------------------------------------------------------------------------------
 
 export PATH=${PATH}:/home/andre/bin
-export PATH="${PATH}:/home/andre/.local/bin"
-export PATH="${PATH}:/home/andre/.cabal/bin"
 export GOPATH=/home/andre/prog/go
 export EDITOR=nvim
 export VISUAL=nvim
@@ -157,6 +155,8 @@ export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixos-19.09"
 export GIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 
+export PATH="${PATH}:/home/andre/.local/bin"
+export PATH="${PATH}:/home/andre/.cabal/bin"
 
 xset r rate 200 160
 

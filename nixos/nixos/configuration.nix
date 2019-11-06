@@ -65,6 +65,8 @@
     acpi
     acpid
     alpine
+    autoconf
+    automake
     bash
     bat
     binutils
@@ -72,6 +74,7 @@
     cacert
     cachix
     chromium
+    cloc
     cron
     curl 
     docker
@@ -82,6 +85,7 @@
     gcc
     gimp
     gitFull
+    gnum4
     gnome3.gedit
     gnome3.ghex
     gnome3.gnome-characters
@@ -108,8 +112,10 @@
     killall
     libreoffice
     libqalculate
+    libtool
     lm_sensors
     lsd
+    lzma
     man_db
     mitmproxy
     minecraft
@@ -147,6 +153,7 @@
     xscreensaver
     zlib
     zlib.dev
+    zlib.out
     zsh 
   ];
 
