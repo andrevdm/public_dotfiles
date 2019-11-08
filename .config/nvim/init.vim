@@ -76,15 +76,38 @@ set number
 set relativenumber
 set splitright
 set nowrap
-" search options
+
+" When searching try to be smart about cases
 set ignorecase
 set smartcase
+
+" Highlight search results
+set hlsearch
+
+" highlights searches as you go.
+set incsearch
+
+" Change cwd to current file dir
+set autochdir
+
+" Ignore certain files with globbing
+set wildignore+=*.zip,*.pyc,*.tar,*.gz
+set wildignore+=.hg,.git,.svn                    " Version control
+set wildignore+=.stack-work,dist-newstyle        " Haskell
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg   " binary images
+set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest " compiled object files
+set wildignore+=*.sw?                            " Vim swap files
+set wildignore+=*.DS_Store                       " OSX 
 
 " persistent
 set undodir=~/.cache/vimundo/
 set undofile
 set backupdir=~/.cache/nvim_cache
 set directory=~/.cache/nvim_cache
+
+" Don't try to highlight long lines.
+" This fixes some performance problems on huge files.
+set synmaxcol=800
 
 nnoremap ]e :lnext <CR>
 nnoremap [e :lprev <CR>
@@ -123,11 +146,41 @@ let g:PaperColor_Theme_Options = {
 "colorscheme onedark
 
 
+" Use spaces instead of tabs
 set expandtab
+
+" Be smart when using tabs
+set smarttab
+
+" 1 tab = 2 spaces
 set shiftwidth=2
-set softtabstop=0
 set tabstop=2
+set softtabstop=2
+
+" Show trailing whitespace
+set list
+set listchars=tab:»·,trail:·
+
+" Sets the terminal title nicely.
 set title
+
+" No annoying sound on errors
+set visualbell t_vb=
+
+" Allow block selection over non-existant text
+set virtualedit=block
+
+" Large history
+set history=500
+
+" Don't redraw while executing macros (good for performance)
+set lazyredraw
+
+" Show commands-in-progress in status bar.
+set showcmd
+
+" Don't show startup screen
+set shortmess+=Ic
 
 let NERDTreeShowHidden=1
 set updatetime=100
