@@ -67,6 +67,7 @@
     alpine
     autoconf
     automake
+    awscli
     bash
     bat
     binutils
@@ -143,7 +144,9 @@
     tmux
     tree
     youtube-dl
+    unzip
     vim
+    vscode-with-extensions
     vlc
     watchman
     wget 
@@ -154,6 +157,7 @@
     zlib
     zlib.dev
     zlib.out
+    zip
     zsh 
   ];
 
