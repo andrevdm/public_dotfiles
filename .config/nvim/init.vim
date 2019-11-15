@@ -88,7 +88,7 @@ set hlsearch
 set incsearch
 
 " Change cwd to current file dir
-set autochdir
+"set autochdir
 
 " Ignore certain files with globbing
 set wildignore+=*.zip,*.pyc,*.tar,*.gz
