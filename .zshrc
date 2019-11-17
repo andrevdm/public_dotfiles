@@ -108,7 +108,6 @@ alias grep="grep --color=auto"
 
 #[ -s "/home/andre/.dnx/dnvm/dnvm.sh" ] && . "/home/andre/.dnx/dnvm/dnvm.sh" # Load dnvm
 #/usr/sbin/VBoxClient-all
-#.nix-profile/etc/profile.d/nix.sh
 
 #----------------------------------------------------------------------------------------------------------------------
 # fish like sub-string search
@@ -149,12 +148,6 @@ source ~/bin/awssh.sh
 #weather.sh &
 
 
-# nix
-source $HOME/.nix-profile/etc/profile.d/nix.sh
-export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixos-19.09"
-export GIT_SSL_CAINFO=/etc/ssl/certs/ca-certificates.crt
-export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
-
 export PATH="${PATH}:/home/andre/.local/bin"
 export PATH="${PATH}:/home/andre/.cabal/bin"
 
@@ -194,8 +187,8 @@ xinput set-prop 'System Administrator’s Trackpad' 'Device Accel Velocity Scali
 
 alias gs='emacsclient -t -c --eval "(magit-status)" "(delete-other-windows)"'
 alias awssy='awssy --region Ireland --key ~/.ssh/hyraxbio.pem --cache'
-alias vim=nvim-nightly
-alias nvim=nvim-nightly
+alias vim=nvim
+alias nvim=nvim
 alias ls=lsd
 alias cat=bat
 
